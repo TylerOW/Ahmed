@@ -1,0 +1,20 @@
+# IDE files
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+
+# Local configuration
+local.properties
+/local.properties
+
+# Build outputs
+/build/
+**/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# macOS
+.DS_Store

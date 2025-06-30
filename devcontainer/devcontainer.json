@@ -1,0 +1,27 @@
+{
+  "name": "BusTrackr Dev Container",
+
+  // Pick an Ubuntu-based image that already has most tools.
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+
+  "features": {
+    // Install exactly Java 1.8
+    "ghcr.io/devcontainers/features/java": {
+      "version": "8"
+    },
+
+    // Install exactly Gradle 8.0
+    "ghcr.io/devcontainers/features/gradle": {
+      "version": "8.0",
+      "installGradle": true
+    },
+
+    // (Optional) If you need Node too:
+    "ghcr.io/devcontainers/features/node": {
+      "version": "20"
+    }
+  },
+
+  // After the container is up, run the Gradle wrapper so your project uses the right Gradle
+  "postCreateCommand": "chmod +x gradlew && ./gradlew --version"
+}
